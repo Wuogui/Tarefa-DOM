@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <script src="script.js" defer></script>
     <title>Calculadora de Média</title>
 </head>
 <body>
@@ -11,10 +12,12 @@
     <main class="calculadora">
         <form>
             <span>Nota: </span>
-            <input placeholder="Digite uma nota aqui">
-            <button>Adicionar</button>
+            <input id='entrada' placeholder="Digite uma nota aqui">
+            <button type="button" id="btnEnviar" class="botao">Adicionar</button>
         </form>
         <div id="caixa" class="caixa-de-texto"></div>
+        <button type="button" id="btnLimpar" class="botao">Limpar tudo</button>
+        <button type="button" id="btnLimpar" class="botao">Calcular média</button>
     </main>
     <footer></footer>
 </body>
