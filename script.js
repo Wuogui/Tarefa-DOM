@@ -33,6 +33,9 @@ function limpar(){
 
 //função que calcula a média das notas
 function media(){
+    if (caixa.innerText == '') {
+        return
+    }
     for (let k=0; k < listaDeNotas.length; k++){
         if (k == 0) {
             calculo = listaDeNotas[k]
